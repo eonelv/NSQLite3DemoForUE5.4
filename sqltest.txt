@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS [t_sys_params] (
+  [FID] INTEGER NOT NULL PRIMARY KEY,
+  [FType] VARCHAR(255) NOT NULL,
+  [FValue] VARCHAR(255) NOT NULL);
+
+insert into t_sys_params (FType, FValue) values("a", "value2");
+
+select * from t_sys_params
